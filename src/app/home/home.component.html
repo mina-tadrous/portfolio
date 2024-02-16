@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <!-- About Me -->
+        <div class="col-lg shadow border m-1 card">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/3D_Animation_Style_image_for_a_software_developer_0.jpg" alt="profile picture" width="256" hight="256" class="rounded-circle">
+                <p>Experienced and analytical professional with 15 years of cutting-edge expertise in designing, developing, testing, and
+                    seamlessly integrating software solutions. Highly adaptable team player whose career journey has encompassed full
+                    spectrum software development life cycle initiatives, from conceptualization and coding to testing and integration,
+                    to post-delivery troubleshooting. Devoted professional with a robust background in performance testing, ensuring
+                    optimal software quality and performance. Brings innovation, passion for delivering high-quality solutions, and
+                    proficiency in handling end-to-end software projects to life.
+                    </p>
+            </div>
+        </div>
+        <!-- Featured Project -->
+        <div class="col-lg shadow border m-1 card">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProjects.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let pic of featuredProjects.pictures">
+                    <slide>
+                        <img src="{{pic}}" alt="slide" style="display: block; width: 100%;" />
+                    </slide>
+                </div>
+            </carousel>
+        
+            <h3 class="mt-2">Description</h3>
+            <p>{{featuredProjects.description}}</p>
+            <div *ngIf="featuredProjects.projectLink">
+                <p>Project Link <a href={{featuredProjects.projectLink}} target="_blank"> here</a></p>
+            </div>
+        
+        </div>
+    </div>
+</div>

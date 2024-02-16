@@ -1,0 +1,6 @@
+.nav-style {
+    backdrop-filter: blur(15px);
+    background-color: darkslateblue;
+    border-radius: 5px;
+    color: white;
+}
