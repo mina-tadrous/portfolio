@@ -8,7 +8,7 @@ export const projects: Project[] = [
         summary: 'An Angular project demonstrating agile development in implementing product lifecycle management features.',
         description: 'Through my swift action in delivering critical new features on a tight schedule, I enabled the account manager to present an exceptionally compelling offer to the customer, achieving remarkable business success. This accomplishment underscores my proficiency in Angular, highlighting my ability to provide valuable new solutions.',
         projectLink: 'https://github.com/',
-        pictures: ['../../assets/PLM_angular1.png', '../../assets/PLM_TypeScript1.png'],
+        pictures: ['./assets/PLM_angular1.png', './assets/PLM_TypeScript1.png'],
         tags: [Tag.ANGULAR, Tag.TYPESCRIPT]
     },
     {
