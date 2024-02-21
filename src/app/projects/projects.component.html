@@ -4,12 +4,19 @@
         <button class="btn btn-outline-primary mb-2 me-2 normal_btn" (click)="isCollapsed = !isCollapsed">Filter</button>
         <button class="btn btn-outline-primary mb-2 me-2 normal_btn" [hidden]="!filtering" (click)="resetFilters()">Reset</button>
         <div [collapse]="isCollapsed" [isAnimated]="true">
-            <div class="border mb-2 shadow-sm card" style="width: 250px;">
+            <div class="border mb-2 shadow-sm card" style="width: 90%;">
                 <form>
                     <div class="row max-0">
                         <div class="col">
-                            <small><b>Programming Languages:</b></small>
+                            <small><b>Languages</b></small>
                             <div class="form-group">
+                                <div class="form-check">
+                                    <input type="checkbox" 
+                                           class="form-check-input postion-static me-2" 
+                                           [(ngModel)]="java" 
+                                           (change)="filter()" name="java"> 
+                                    <label class="form-check-label small">Java</label>
+                                </div>
                                 <div class="form-check">
                                     <input type="checkbox" 
                                            class="form-check-input postion-static me-2" 
@@ -20,16 +27,191 @@
                                 <div class="form-check">
                                     <input type="checkbox" 
                                            class="form-check-input postion-static me-2" 
-                                           [(ngModel)]="java" 
-                                           (change)="filter()" name="java"> 
-                                    <label class="form-check-label small">Java</label>
+                                           [(ngModel)]="shell_scripting" 
+                                           (change)="filter()" name="shell_scripting"> 
+                                    <label class="form-check-label small">Shell Script</label>
+                                </div>
+								<div class="form-check">
+                                    <input type="checkbox" 
+                                           class="form-check-input postion-static me-2" 
+                                           [(ngModel)]="python" 
+                                           (change)="filter()" name="python"> 
+                                    <label class="form-check-label small">Python</label>
+                                </div>
+								<div class="form-check">
+                                    <input type="checkbox" 
+                                           class="form-check-input postion-static me-2" 
+                                           [(ngModel)]="c_sharp" 
+                                           (change)="filter()" name="c_sharp"> 
+                                    <label class="form-check-label small">C#</label>
+                                </div>
+								<div class="form-check">
+                                    <input type="checkbox" 
+                                           class="form-check-input postion-static me-2" 
+                                           [(ngModel)]="javascript" 
+                                           (change)="filter()" name="javascript"> 
+                                    <label class="form-check-label small">Javascript</label>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <small><b>Web Technologies:</b></small>
+                            <small><b>Database</b></small>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="oracle" 
+                                       (change)="filter()" name="oracle"> 
+                                <label class="form-check-label small">Oracle</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="postgresql" 
+                                       (change)="filter()" name="postgresql"> 
+                                <label class="form-check-label small">Postgres</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="mongodb" 
+                                       (change)="filter()" name="mongodb"> 
+                                <label class="form-check-label small">MongoDB</label>
+                            </div>
                         </div>
+
+                        <div class="col">
+                            <small><b>Frameworks</b></small>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="angular" 
+                                       (change)="filter()" name="angular"> 
+                                <label class="form-check-label small">Angular</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="asp" 
+                                       (change)="filter()" name="asp"> 
+                                <label class="form-check-label small">ASP</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="jsp" 
+                                       (change)="filter()" name="jsp"> 
+                                <label class="form-check-label small">JSP</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="django" 
+                                       (change)="filter()" name="django"> 
+                                <label class="form-check-label small">django</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="spring" 
+                                       (change)="filter()" name="spring"> 
+                                <label class="form-check-label small">Spring</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="web_service" 
+                                       (change)="filter()" name="web_service"> 
+                                <label class="form-check-label small">Soap Web Service</label>
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <small><b>Testing</b></small>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="soapui" 
+                                       (change)="filter()" name="soapui"> 
+                                <label class="form-check-label small">SoapUI</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="postman" 
+                                       (change)="filter()" name="postman"> 
+                                <label class="form-check-label small">Postman</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="cypress" 
+                                       (change)="filter()" name="cypress"> 
+                                <label class="form-check-label small">Cypress</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="selenium" 
+                                       (change)="filter()" name="selenium"> 
+                                <label class="form-check-label small">Selenium</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="jmeter" 
+                                       (change)="filter()" name="jmeter"> 
+                                <label class="form-check-label small">JMeter</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="gatling" 
+                                       (change)="filter()" name="gatling"> 
+                                <label class="form-check-label small">Gatling</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <small><b>Deployment</b></small>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="docker" 
+                                       (change)="filter()" name="docker"> 
+                                <label class="form-check-label small">Docker</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="kubernetes" 
+                                       (change)="filter()" name="kubernetes"> 
+                                <label class="form-check-label small">Kubernetes</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="maven" 
+                                       (change)="filter()" name="maven"> 
+                                <label class="form-check-label small">Maven</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="jenkins" 
+                                       (change)="filter()" name="jenkins"> 
+                                <label class="form-check-label small">Jenkins</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="aws" 
+                                       (change)="filter()" name="aws"> 
+                                <label class="form-check-label small">AWS</label>
+                            </div>
+                        </div>
+
                     </div>
                 </form>
             </div>

@@ -29,7 +29,7 @@
             </carousel>
         
             <h3 class="mt-2">Description</h3>
-            <p>{{featuredProjects.description}}</p>
+            <p style="text-align: left;" [innerHTML]="featuredProjects.description"></p>
             <div *ngIf="featuredProjects.projectLink">
                 <p>Project Link <a href={{featuredProjects.projectLink}} target="_blank"> here</a></p>
             </div>
