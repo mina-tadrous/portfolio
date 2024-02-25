@@ -26,16 +26,21 @@ export class ProjectsService {
     let filterProjects: Project[] = []
 
     this.getProjects().forEach(project => {
+      let foundAny = true;
 
-      let foundAll = true;
+      if(filterTags.length > 0) {
+        foundAny = false;
+      }
+
+      
 
       filterTags.forEach(filterTag => {
-        if(project.tags.includes(filterTag) == false) {
-          foundAll = false; 
+        if(project.tags.includes(filterTag)) {
+          foundAny = true; 
         }
       })
 
-      if(foundAll) {
+      if(foundAny) {
         filterProjects.push(project);
       }
       
