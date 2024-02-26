@@ -102,8 +102,8 @@ export const projects: Project[] = [
     },
 	{
         id: 7,
-        name: 'Zain North Sudan CBiO Solution',
-        summary: 'Led the successful implementation of the Zain North Sudan CBiO Solution customization, focusing on enhancing billing and customer care functionalities. Executed various development, and customization tasks to optimize operations and improve user experience.',
+        name: 'Chargin and Billing in One Solution Adaptation Development',
+        summary: 'Led the successful development of the Charging and Billing in One Solution customization, focusing on enhancing billing and customer care functionalities. Executed various development, and customization tasks to optimize operations and improve user experience.',
         description: ' <ol><br>        <li><strong>CS 5 Upgrade & BSCS iX R3 Upgrade:</strong> Spearheaded the seamless transition to CS 5 and BSCS iX R3, ensuring system reliability and compatibility with evolving technological standards.</li><br>        <li><strong>Charging and Billing in One (CBiO):</strong> Implemented CBiO solution, consolidating charging and billing functionalities into a unified system, streamlining operations and enhancing efficiency.</li><br>        <li><strong>iX Collections for Dunning:</strong> Successfully integrated iX Collections for Dunning, automating debt collection processes and minimizing revenue leakage.</li><br>        <li><strong>Data Migrations:</strong> Oversaw the smooth transfer of data, maintaining data integrity and minimizing disruptions during migrations.</li><br>        <li><strong>Non-Kernel Customization:</strong> Executed non-kernel customizations to tailor the system to specific business requirements, enhancing flexibility and functionality.</li><br>        <li><strong>Interconnect Price Import Tool (IPIT) Interfaces:</strong> Developed Oracle procedures integrated with Java processes to configure the Ericsson billing system with accurate pricing data, optimizing billing processes.</li><br>        <li><strong>Web Services Layer Customization:</strong> Designed and implemented interfaces connecting BSCS with external modules, facilitating seamless data exchange and system integration.</li><br>        <li><strong>Customer Care Enhancements:</strong> Implemented Oracle procedures to execute business logic, enhancing customer care functionalities and improving service delivery.</li><br>        <li><strong>Itemized Bill Generation:</strong> Customized the web application of BSCS to provide a user-friendly GUI for generating itemized bills, based on MVC architecture, enhancing transparency and customer satisfaction.</li><br>        </ol>',
         projectLink: '',
         pictures: [''],
@@ -111,8 +111,8 @@ export const projects: Project[] = [
     },
 	{
         id: 8,
-        name: 'Wataniya Kuwait Integration Layer',
-        summary: 'Contributed significantly to the Wataniya Kuwait Integration Layer project in collaboration with Ericsson, focusing on migrating from BSCS 7 to BSCS IX R3. Developed a transitional layer to ensure backward compatibility with existing applications running on BSCS 7, facilitating a seamless upgrade process to BSCS IX R3 without disrupting operations.',
+        name: 'Backward compatability Integration Layer Development',
+        summary: 'Contributed significantly to the Integration Layer project in collaboration with Ericsson, focusing on migrating from BSCS 7 to BSCS IX R3. Developed a transitional layer to ensure backward compatibility with existing applications running on BSCS 7, facilitating a seamless upgrade process to BSCS IX R3 without disrupting operations.',
         description: '<ol><br>        <li>Led the development of a transitional layer between existing applications and BSCS IX R3, ensuring backward compatibility and smooth migration.</li><br>        <li>Received handover from the main developer of the tool and implemented change requests, including adding new parameters to commands for integration with the customer\'s CRM system.</li><br>	    <li>Played a pivotal role, demonstrating strong expertise in software development and migration processes. Additionally, contributed to other projects, showcasing versatility and multitasking abilities.</li><br>		</ol>',
         projectLink: '',
         pictures: [],
