@@ -4,6 +4,22 @@ import { Tag } from "./Tag";
 export const projects: Project[] = [
     {
         id: 1,
+        name: 'Dynamic Auction Platform Development using ASP.NET Core',
+        summary: 'Developed a dynamic and user-friendly auction website utilizing ASP.NET Core technology. The project aimed to streamline the auction process and enhance user engagement by providing a seamless and intuitive platform for buying and selling products.',
+        description: `<ul>
+        <li><b>User Registration:</b> Implemented a user registration system allowing new users to sign up and create accounts securely, ensuring a personalized experience for each user.</li>
+        <li><b>Sale Creation:</b> Developed functionality for users to create new sales listings, including the ability to set a starting price for the product being auctioned.</li>
+        <li><b>Bidding System:</b> Implemented a robust bidding system that enables registered users to search for products and place bids, with the option to post higher prices than the current highest bid.</li>
+        <li><b>Sale Closure:</b> Designed a mechanism for sale owners to close auctions once they reach their desired duration or when they receive a satisfactory bid. The highest bid at the time of closure wins the sale.</li>
+        <li><b>Commenting Feature:</b> Integrated a commenting feature that allows registered users to engage with open sale listings by posting comments, fostering community interaction and facilitating communication between buyers and sellers.</li>
+        </ul>
+		<p>The auction website project successfully delivered a feature-rich and intuitive platform that revolutionized the online auction experience. By prioritizing user engagement, security, and functionality, the project aimed to meet the diverse needs of buyers and sellers, ultimately driving increased participation and satisfaction on the platform. This project served as a showcase of my competence in ASP.NET Core development.</p>`,
+        projectLink: '',
+        pictures: [],
+        tags: [Tag.C_SHARP, Tag.ASP, Tag.SQL_SERVER]
+    },
+    {
+        id: 1,
         name: 'Gaining Competitive Edge Through Customer-Centric ',
         summary: 'Successfully implemented a critical feature to meet customer requirements, leading to a competitive advantage in the market.',
         description: `<ul>

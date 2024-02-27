@@ -80,6 +80,13 @@
                                        (change)="filter()" name="mongodb"> 
                                 <label class="form-check-label small">MongoDB</label>
                             </div>
+                            <div class="form-check">
+                                <input type="checkbox" 
+                                       class="form-check-input postion-static me-2" 
+                                       [(ngModel)]="sql_server" 
+                                       (change)="filter()" name="sql_server"> 
+                                <label class="form-check-label small">SQL Server (Express)</label>
+                            </div>
                         </div>
 
                         <div class="col">

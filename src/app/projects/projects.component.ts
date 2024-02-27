@@ -26,6 +26,7 @@ export class ProjectsComponent implements OnInit {
   oracle: boolean = false;
   postgresql: boolean = false;
   mongodb: boolean = false;
+  sql_server: boolean = false;
 
   // Frameworks
   angular: boolean = false;
@@ -80,6 +81,7 @@ export class ProjectsComponent implements OnInit {
     if (this.oracle) { filterTags.push(Tag.ORACLE) }
     if (this.postgresql) { filterTags.push(Tag.POSTGRES) }
     if (this.mongodb) { filterTags.push(Tag.MONGODB) }
+    if (this.sql_server) { filterTags.push(Tag.SQL_SERVER) }
     if (this.angular) { filterTags.push(Tag.ANGULAR) }
     if (this.angularjs) { filterTags.push(Tag.ANGULARJS) }
     if (this.jsp) { filterTags.push(Tag.JSP) }
@@ -103,7 +105,7 @@ export class ProjectsComponent implements OnInit {
     if (this.jenkins) { filterTags.push(Tag.JENKINS) }
     if (this.aws) { filterTags.push(Tag.AWS) }
 
-    if (this.typescript || this.java || this.shell_scripting || this.python || this.c_sharp || this.node_js || this.javascript || this.oracle || this.postgresql || this.mongodb || this.angular || this.angularjs || this.jsp || this.django || this.react || this.asp || this.spring || this.web_service || this.junit || this.soapui || this.postman || this.cypress || this.protractor || this.selenium || this.karate || this.jmeter || this.gatling || this.docker || this.kubernetes || this.maven || this.jenkins || this.aws) {
+    if (this.typescript || this.java || this.shell_scripting || this.python || this.c_sharp || this.node_js || this.javascript || this.oracle || this.postgresql || this.mongodb || this.sql_server || this.angular || this.angularjs || this.jsp || this.django || this.react || this.asp || this.spring || this.web_service || this.junit || this.soapui || this.postman || this.cypress || this.protractor || this.selenium || this.karate || this.jmeter || this.gatling || this.docker || this.kubernetes || this.maven || this.jenkins || this.aws) {
       this.filtering = true;
     } else {
       this.filtering = false;
@@ -122,6 +124,7 @@ export class ProjectsComponent implements OnInit {
     this.oracle = false;
     this.postgresql = false;
     this.mongodb = false;
+    this.sql_server= false;
     this.angular = false;
     this.angularjs = false;
     this.jsp = false;

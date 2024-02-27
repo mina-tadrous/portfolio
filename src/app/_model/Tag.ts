@@ -24,6 +24,7 @@ export class Tag {
     static readonly ORACLE = new Tag('Oracle', '#F80000');
     static readonly POSTGRES = new Tag('PostgreSQL', '#336791');
     static readonly MONGODB = new Tag('MongoDB', '#4DB33D');
+    static readonly SQL_SERVER = new Tag('SQL Server (Express)', '#3772FF');
 
     // Testing Tools
     static readonly INTUIT_KARATE = new Tag('Intuit Karate', '#00B0D8');
