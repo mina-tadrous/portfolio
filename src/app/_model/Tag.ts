@@ -1,5 +1,7 @@
 export class Tag {
 
+    static readonly NONE = new Tag('','');
+    
     // Programming Languages
     static readonly JAVA = new Tag('Java', '#007396');
     static readonly C_SHARP = new Tag('C#', '#239120');
