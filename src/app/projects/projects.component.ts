@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ProjectsService } from '../_services/projects.service';
+import { FilterOption } from '../_model/FilterOption';
 import { Project } from '../_model/Project';
 import { Tag } from '../_model/Tag';
-import { FilterOption } from '../_model/FilterOption';
+import { ProjectsService } from '../_services/projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -21,7 +21,6 @@ export class ProjectsComponent implements OnInit {
     { key: 'Java', tag: Tag.JAVA, checked: false },
     { key: 'TypeScript', tag: Tag.TYPESCRIPT, checked: false },
     { key: 'Shell Scripting', tag: Tag.SHELL_SCRIPTING, checked: false },
-    { key: 'Python', tag: Tag.PYTHON, checked: false },
     { key: 'C#', tag: Tag.C_SHARP, checked: false },
     { key: 'JavaScript', tag: Tag.JAVASCRIPT, checked: false }
   ];
@@ -29,7 +28,6 @@ export class ProjectsComponent implements OnInit {
   databases: FilterOption[] = [
     { key: 'Oracle', tag: Tag.ORACLE, checked: false },
     { key: 'PostgreSQL', tag: Tag.POSTGRES, checked: false },
-    { key: 'MongoDB', tag: Tag.MONGODB, checked: false },
     { key: 'SQL Server (Express)', tag: Tag.SQL_SERVER, checked: false }
   ];
 
@@ -37,15 +35,12 @@ export class ProjectsComponent implements OnInit {
     { key: 'Angular', tag: Tag.ANGULAR, checked: false },
     { key: 'ASP', tag: Tag.ASP, checked: false },
     { key: 'JSP', tag: Tag.JSP, checked: false },
-    { key: 'Django', tag: Tag.DJANGO, checked: false },
-    { key: 'Spring', tag: Tag.SPRING, checked: false },
     { key: 'Soap Web Service', tag: Tag.WEB_SERVICES, checked: false }
   ];
 
   testingTools: FilterOption[] = [
     { key: 'SoapUI', tag: Tag.SOAPUI, checked: false },
     { key: 'Postman', tag: Tag.POSTMAN, checked: false },
-    { key: 'Cypress', tag: Tag.CYPRESS, checked: false },
     { key: 'Selenium', tag: Tag.SELENIUM, checked: false },
     { key: 'JMeter', tag: Tag.JMETER, checked: false },
     { key: 'Gatling', tag: Tag.GATLING, checked: false }
