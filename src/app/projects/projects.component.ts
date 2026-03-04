@@ -21,21 +21,22 @@ export class ProjectsComponent implements OnInit {
     { key: 'Java', tag: Tag.JAVA, checked: false },
     { key: 'TypeScript', tag: Tag.TYPESCRIPT, checked: false },
     { key: 'Shell Scripting', tag: Tag.SHELL_SCRIPTING, checked: false },
-    { key: 'C#', tag: Tag.C_SHARP, checked: false },
     { key: 'JavaScript', tag: Tag.JAVASCRIPT, checked: false }
   ];
 
   databases: FilterOption[] = [
     { key: 'Oracle', tag: Tag.ORACLE, checked: false },
     { key: 'PostgreSQL', tag: Tag.POSTGRES, checked: false },
-    { key: 'SQL Server (Express)', tag: Tag.SQL_SERVER, checked: false }
+    { key: 'MongoDB', tag: Tag.MONGODB, checked: false }
   ];
 
   frameworks: FilterOption[] = [
     { key: 'Angular', tag: Tag.ANGULAR, checked: false },
-    { key: 'ASP', tag: Tag.ASP, checked: false },
     { key: 'JSP', tag: Tag.JSP, checked: false },
-    { key: 'Soap Web Service', tag: Tag.WEB_SERVICES, checked: false }
+    { key: 'Soap Web Service', tag: Tag.WEB_SERVICES, checked: false },
+    { key: 'React', tag: Tag.REACT, checked: false }, 
+    { key: 'Android', tag: Tag.ANDROID, checked: false },
+    { key: 'Spring Boot', tag: Tag.SPRING, checked: false }
   ];
 
   testingTools: FilterOption[] = [
@@ -54,6 +55,11 @@ export class ProjectsComponent implements OnInit {
     { key: 'AWS', tag: Tag.AWS, checked: false }
   ];
 
+  ais: FilterOption[] = [
+    { key: 'Generative AI', tag: Tag.GENERATIVE_AI, checked: false },
+    { key: 'Roo Code', tag: Tag.ROO_CODE, checked: false },
+    { key: 'GitHub Copilot', tag: Tag.GITHUB_COPILOT, checked: false }
+  ];
   constructor(private titleService: Title, private projectService: ProjectsService) {
     this.titleService.setTitle('Mina Tadrous - Projects');
   }
@@ -92,6 +98,12 @@ export class ProjectsComponent implements OnInit {
       // Check if the deployment is checked
       if (deployment.checked) {
         filterTags.push(deployment.tag);
+      }
+    });
+    this.ais.forEach(ai => {
+      // Check if the deployment is checked
+      if (ai.checked) {
+        filterTags.push(ai.tag);
       }
     });
 

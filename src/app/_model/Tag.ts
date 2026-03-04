@@ -8,7 +8,7 @@ export class Tag {
     static readonly SHELL_SCRIPTING = new Tag('Shell Scripting', '#000000');
     static readonly PYTHON = new Tag('Python', '#3776AB');
     static readonly C_PLUS_PLUS = new Tag('C++', '#00599C');
-    static readonly NODE_JS = new Tag('node.js', '#68A063');
+    static readonly NODE = new Tag('node', '#68A063');
     static readonly TYPESCRIPT = new Tag('TypeScript', '#3178C6');
     static readonly JAVASCRIPT = new Tag('JavaScript', '#F7DF1E');
     
@@ -82,6 +82,14 @@ export class Tag {
     static readonly TOMCAT = new Tag('Tomcat', '#EEB200');
     static readonly JBOSS = new Tag('JBoss', '#007396');
     static readonly JMS = new Tag('JMS', '#007366');
+    static readonly GENERATIVE_AI = new Tag('Generative AI', '#8E44AD'); // Deep Purple (distinct from leadership/spring)
+    static readonly ANDROID = new Tag('Android', '#A4C639');      // Official Android Green
+    static readonly ROO_CODE = new Tag('Roo Code', '#64FFDA');     // Bright Teal (Cyan-variant to stand out)
+    static readonly WEBPACK = new Tag('Webpack', '#1C78C0');       // Deep Blue-Grey
+    static readonly SAAS = new Tag('SaaS', '#4A90E2');            // Sky Blue (different from Jira)
+    static readonly EMBEDDED_SYSTEMS = new Tag('Embedded Systems', '#7F8C8D'); // Concrete Grey
+    static readonly CURSOR = new Tag('Cursor', '#00A3FF');   // Electric Blue
+    static readonly GITHUB_COPILOT = new Tag('GitHub Copilot', '#24292E'); // Dark Charcoal / GitHub Slate
 
     static readonly LEADERSHIP = new Tag('Leadership', '#FFD700');
     private constructor(private readonly key: string, public readonly color: string) {
